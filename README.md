@@ -20,15 +20,31 @@ Both menus will open up a console in which C# can be executed against assemblies
 
 ### Keyboard shortcuts ###
 
-+ *tab* Naive autocompletion
-+ *up/down* Browse through command history
-+ *shift+enter* Newline without executing command
++ ```tab``` Naive autocompletion based on command history
++ ```up/down``` Browse through command history
++ ```shift+enter``` Newline without executing command
 
 ### Available commands ###
 
-+ *help* Shows available commands
-+ *cls* Clears the console
-+ *#r "assembly name or path"* Reference an assembly for use in console
++ ```help``` Shows available commands
++ ```cls``` Clears the console
++ ```#r "assembly name or path"``` Reference an assembly for use in console
+
+### Example code ###
+
+When the dotPeek Console is opened, try runningthe following sample:
+
+    class Person {
+        public string Name { get; set; }
+    }
+    var me = new Person { Name = "Your name" };
+
+Next, issue some commands like:
+
+* ```me``` will display the Person instance
+* ```me.Name``` will display the name property of the Person instance
+* ```throw new Exception("Error here");``` will throw an Exception
+
 
 ## How do I get it? ##
 
