@@ -11,6 +11,8 @@ if not "%PackageVersion%" == "" (
    set version=-Version %PackageVersion%
 )
 
+set EnableNuGetPackageRestore=true
+
 REM Clean
 echo Cleaning...
 del /q src\Console\bin\Release\*
