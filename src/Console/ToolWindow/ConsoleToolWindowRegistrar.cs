@@ -1,6 +1,6 @@
 #if DP10
 using JetBrains.DotPeek.AssemblyExplorer;
-#else
+#elif DP11 || DP12
 #endif
 using JetBrains.DataFlow;
 using JetBrains.ProjectModel;

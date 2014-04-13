@@ -1,7 +1,7 @@
 ﻿using JetBrains.DotPeek.Plugins.Console.Infrastructure.Roslyn;
 #if DP10
 using JetBrains.DotPeek.AssemblyExplorer;
-#else
+#elif DP11 || DP12
 using JetBrains.ReSharper.Features.Browsing.AssemblyExplorer;
 #endif
 using JetBrains.Util;

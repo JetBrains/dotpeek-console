@@ -2,7 +2,8 @@
 using System.Windows.Media.Imaging;
 using JetBrains.DotPeek.AssemblyExplorer;
 using JetBrains.DotPeek.ExplorerNodesModel.Nodes;
-#else
+using JetBrains.UI.Icons;
+#elif DP11 || DP12
 using JetBrains.ReSharper.Features.Browsing.AssemblyExplorer;
 using JetBrains.ReSharper.Features.Browsing.AssemblyExplorer.ExplorerNodesModel.Core;
 using JetBrains.ReSharper.Features.Browsing.AssemblyExplorer.ExplorerNodesModel.Nodes;
@@ -61,7 +62,7 @@ namespace JetBrains.DotPeek.Plugins.Console.Handlers
             //bitmap.StreamSource = iconStream;
             //bitmap.EndInit();
             //icon.Source = bitmap;
-#else
+#elif DP11 || DP12
             IThemedIconManager themedIconManager = SolutionEx.GetComponent<IThemedIconManager>(solution);
             var icon = themedIconManager.GetIcon<ConsoleThemedIcons.Console>().CurrentImageSource;
 #endif
@@ -99,7 +100,7 @@ namespace JetBrains.DotPeek.Plugins.Console.Handlers
                         {
 #if DP10
                             IAssembly assemblyResolveResult = ModuleReferencesResolveStoreEx.ResolveResult(assemblyReferenceNode.Reference);
-#else
+#elif DP11 || DP12
                             IAssembly assemblyResolveResult = ModuleReferencesResolveStoreEx.GetModuleToAssemblyResolveResult(assemblyReferenceNode.Reference);
 #endif
                             if (assemblyResolveResult != null)
@@ -115,7 +116,7 @@ namespace JetBrains.DotPeek.Plugins.Console.Handlers
                     {
                         console.LoadAssemblies(new[] { assemblyFile.Location.FullPath });
                     }
-#else
+#elif DP11 || DP12
                     if (component != null && assemblyFile.Location.ExistsFile && !AssemblyExplorerUtil.AssemblyIsBroken(assemblyFile.Location, component))
                     {
                         console.LoadAssemblies(new[] {assemblyFile.Location.FullPath});

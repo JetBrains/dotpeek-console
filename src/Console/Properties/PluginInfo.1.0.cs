@@ -6,7 +6,7 @@ using JetBrains.Application.PluginSupport;
 
 // The following information is displayed in the Plugins dialog
 [assembly: PluginTitle("Console")]
-[assembly: PluginDescription("dotPeek Console allows execution of C# code inside dotPeek. It supports dotPeek 1.0 and 1.1.")]
+[assembly: PluginDescription("dotPeek Console allows execution of C# code inside dotPeek.")]
 [assembly: PluginVendor("Maarten Balliauw")]
 
 [assembly: AssemblyVersion("1.0.*")]

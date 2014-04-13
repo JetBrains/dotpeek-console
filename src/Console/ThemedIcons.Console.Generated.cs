@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: global::System.Windows.Markup.XmlnsDefinitionAttribute("urn:shemas-jetbrains-com:ui-application-icons-console", "JetBrains.DotPeek.Plugins.Console")]
-[assembly: global::JetBrains.UI.Icons.CompiledIcons.CompiledIconsPackAttribute(IconPackResourceIdentification="JetBrains.DotPeek.Plugins.Console.1.1;component/ThemedIcons.Console.Generated.Xam" +
+[assembly: global::JetBrains.UI.Icons.CompiledIcons.CompiledIconsPackAttribute(IconPackResourceIdentification="JetBrains.DotPeek.Plugins.Console.1.2;component/ThemedIcons.Console.Generated.Xam" +
 	"l", IconNames=new string[] {
 		"Console"})]
 
@@ -77,7 +77,7 @@ namespace JetBrains.DotPeek.Plugins.Console
 		///<example>
 		///  <code>themediconmanager.GetIcon&lt;ConsoleThemedIcons.Console&gt;()        // Icon image for rendering</code>
 		///</example>
-		[global::JetBrains.UI.Icons.CompiledIcons.CompiledIconClassAttribute("JetBrains.DotPeek.Plugins.Console.1.1;component/ThemedIcons.Console.Generated.Xam" +
+		[global::JetBrains.UI.Icons.CompiledIcons.CompiledIconClassAttribute("JetBrains.DotPeek.Plugins.Console.1.2;component/ThemedIcons.Console.Generated.Xam" +
 			"l", 0, "Console")]
 		public sealed class Console : global::JetBrains.UI.Icons.CompiledIcons.CompiledIconClass
 		{
@@ -104,7 +104,7 @@ namespace JetBrains.DotPeek.Plugins.Console
 			///<example>
 			///  <code>themediconmanager.GetIcon&lt;ConsoleThemedIcons.Console&gt;()        // Icon image for rendering</code>
 			///</example>
-			public static global::JetBrains.UI.Icons.IconId Id = new global::JetBrains.UI.Icons.CompiledIcons.CompiledIconId("JetBrains.DotPeek.Plugins.Console.1.1;component/ThemedIcons.Console.Generated.Xam" +
+			public static global::JetBrains.UI.Icons.IconId Id = new global::JetBrains.UI.Icons.CompiledIcons.CompiledIconId("JetBrains.DotPeek.Plugins.Console.1.2;component/ThemedIcons.Console.Generated.Xam" +
 					"l", 0, "Console");
 		}
 	}
