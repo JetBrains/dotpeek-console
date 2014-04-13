@@ -2,7 +2,6 @@
 using System.Windows.Media.Imaging;
 using JetBrains.DotPeek.AssemblyExplorer;
 using JetBrains.DotPeek.ExplorerNodesModel.Nodes;
-using JetBrains.UI.Icons;
 #elif DP11 || DP12
 using JetBrains.ReSharper.Features.Browsing.AssemblyExplorer;
 using JetBrains.ReSharper.Features.Browsing.AssemblyExplorer.ExplorerNodesModel.Core;
