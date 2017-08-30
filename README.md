@@ -1,3 +1,5 @@
+[![obsolete project](http://jb.gg/badges/obsolete-flat-square.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 # dotpeek-console
 
 dotPeek Console allows execution of C# code inside dotPeek.
